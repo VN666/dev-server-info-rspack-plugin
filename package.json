@@ -1,20 +1,32 @@
 {
   "name": "dev-server-info-rspack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "a rspack plugin ",
-  "main": "index.js",
-  "peerDependencies": {    
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
     "chalk": "^5.4.1",
     "open": "^10.2.0",
     "os": "^0.1.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/VN666/dev-server-info-rspack-plugin.git"
   },
+  "type": "module",
   "author": {
     "name": "VN666",
     "email": "ez18639882012@163.com",
@@ -29,5 +41,11 @@
   "bugs": {
     "url": "https://github.com/VN666/dev-server-info-rspack-plugin/issues"
   },
-  "homepage": "https://github.com/VN666/dev-server-info-rspack-plugin#readme"
+  "homepage": "https://github.com/VN666/dev-server-info-rspack-plugin#readme",
+  "dependencies": {
+    "tsup": "^8.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
 }
