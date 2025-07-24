@@ -6,8 +6,7 @@
   "peerDependencies": {    
     "chalk": "^5.4.1",
     "open": "^10.2.0",
-    "os": "^0.1.2",
-    "rspack": "^1.0.0"
+    "os": "^0.1.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
