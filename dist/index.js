@@ -1,4 +1,4 @@
-// src/index.js
+// src/index.mjs
 import os from "os";
 import chalk from "chalk";
 import open from "open";

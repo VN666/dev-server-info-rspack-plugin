@@ -1,13 +1,13 @@
 {
   "name": "dev-server-info-rspack-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a rspack plugin ",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
     }
   },
   "types": "./dist/index.d.ts",
